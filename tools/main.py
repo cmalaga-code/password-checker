@@ -36,7 +36,7 @@ class App(Tk):
         self.exit_button = ttk.Button(self.button_frame, text="Exit", command=self.destroy)
         self.exit_button.pack(side="left", padx="5")
         self.notice_label = Label(text="**Important**: API & data comes from https://haveibeenpwned.com",
-                                  background="Black",
+                                  background="black",
                                   foreground="white")
         self.notice_label.pack(side="bottom", anchor=CENTER)
 
@@ -59,14 +59,14 @@ class App(Tk):
                                                       text=f"Please change your password ...\nthis "
                                                            f"password has been in {count} security breaches.",
                                                       style="BW.TLabel")
-                        self.output_label.configure(background='Grey')
+                        self.output_label.configure(background='grey')
                         self.output_label.pack(anchor=CENTER)
                         match = True
             if not match:
                 self.output_label = ttk.Label(self.output_label_frame,
                                               text=f"Awesome! your password did not appear in any security breach.",
                                               style="BW.TLabel")
-                self.output_label.configure(background='Grey')
+                self.output_label.configure(background='grey')
                 self.output_label.pack(anchor=CENTER)
 
 
