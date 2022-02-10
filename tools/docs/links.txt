@@ -1,0 +1,3 @@
+k-Anonymity model:
+https://en.wikipedia.org/wiki/K-anonymity
+
